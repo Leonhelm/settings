@@ -8,7 +8,7 @@ ssh-keygen -t rsa
 #### Устанавливаем `nodejs` с помощью [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
-nvm install node
+nvm install --lts
 node --version
 ```
 
