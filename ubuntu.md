@@ -5,10 +5,10 @@
 ssh-keygen -t rsa
 ```
 
-#### Устанавливаем `nodejs` нужной версии
+#### Устанавливаем `nodejs` с помощью [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 ```
-curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
-sudo apt install nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+nvm install node
 node --version
 ```
 
