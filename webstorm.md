@@ -5,10 +5,6 @@
 File > Import Settings...
 ```
 
-#### Устанавливаем доступ по программе `Early Access Preview`:
-* Переходим `File > Settings... > Apperance & Behavior > System Settings > Updates`
-* Устанавливаем `Automatically check updates for Early Access Preview`
-
 #### Настраиваем автоисправление `eslint` по `ctrl+s`
 * Переходим `File > Settings... > Tools > File Watchers > Add
 * Выбираем `<custom>`
