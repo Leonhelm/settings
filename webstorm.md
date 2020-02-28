@@ -17,8 +17,8 @@ File > Import Settings...
 * * File type: `any`
 * * Создаём новый Scope:
 * * * Выбираем `Local`
-* * * Name: `JS+TS`
-* * * Pattern: `file:*.js||file:*.jsx||file:*.ts||file:*.tsx`
+* * * Name: `JS+TS+JSON`
+* * * Pattern: `file:*.js||file:*.jsx||file:*.ts||file:*.tsx||file:*.json`
 * * Выбираем `JS+TS` в поле Scope
 * * Program: `./node_modules/.bin/eslint`
 * * Arguments: `--fix $FilePath$`
