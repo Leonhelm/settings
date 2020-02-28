@@ -16,10 +16,10 @@ File > Import Settings...
 * * Name: `ESlint fix`
 * * File type: `any`
 * * Создаём новый Scope:
-* * * Выбираем `Local`
+* * * Выбираем `Shared`
 * * * Name: `JS+TS+JSON`
 * * * Pattern: `file:*.js||file:*.jsx||file:*.ts||file:*.tsx||file:*.json`
-* * Выбираем `JS+TS` в поле Scope
+* * Выбираем `JS+TS+JSON` в поле Scope
 * * Program: `./node_modules/.bin/eslint`
 * * Arguments: `--fix $FilePath$`
 * * Output paths to refresh: `$FileDir$`
