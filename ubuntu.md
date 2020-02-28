@@ -12,6 +12,13 @@ nvm install --lts
 node --version
 ```
 
+#### Или альтернативно устанавливаем `nodejs` нужной версии
+```
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+sudo apt install nodejs
+node --version
+```
+
 #### Увеличиваем лимит количества файловых наблюдателей
 ```
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
