@@ -12,7 +12,7 @@ nvm install --lts
 node --version
 ```
 
-#### Или альтернативно устанавливаем `nodejs` нужной версии
+#### Или альтернативно устанавливаем `nodejs` нужной версии (нужно `sudo`)
 ```
 curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 sudo apt install nodejs
@@ -22,6 +22,13 @@ node --version
 #### Увеличиваем лимит количества файловых наблюдателей
 ```
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+
+#### Устанавливаем возможность `l2tp vpn`
+```
+sudo apt-get update
+sudo apt-get install network-manager-l2tp
+sudo apt-get install network-manager-l2tp-gnome
 ```
 
 #### Устанавливаем программу для скриншотов
@@ -70,22 +77,12 @@ swipe:
       command: 'xdotool key ctrl+t'
     down: 
       command: 'xdotool key ctrl+w'
-pinch:
-  2:
-    in:
-      command: 'xdotool key ctrl+plus'
-      threshold: 0.1
-    out:
-      command: 'xdotool key ctrl+minus'
-      threshold: 0.1
 
 threshold:
   swipe: 0.4
-  pinch: 0.4
 
 interval:
   swipe: 0.8
-  pinch: 0.1
 ```
 Настраиваем автозапуск:
 * Открываем стандартное приложение `Startup Application`
